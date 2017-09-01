@@ -18,7 +18,7 @@ namespace IP_lab
         {
             InitializeComponent();
         }
-
+        // Open image from local drive
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -33,6 +33,7 @@ namespace IP_lab
             }
         }
 
+        // Convert image to Red.
         private void button2_Click(object sender, EventArgs e)
         {
            
@@ -68,6 +69,7 @@ namespace IP_lab
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        //  convert image to Green.
         private void button3_Click(object sender, EventArgs e)
         {
             Bitmap bmap = (Bitmap)_currentBitmap.Clone();
@@ -101,6 +103,7 @@ namespace IP_lab
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        //Convert image to Blue.
         private void button4_Click(object sender, EventArgs e)
         {
             Bitmap bmap = (Bitmap)_currentBitmap.Clone();
